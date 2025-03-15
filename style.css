@@ -1,0 +1,111 @@
+/* Irish Grover Font */
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hide{
+    display: none;
+}
+
+/* Body Styles */
+body {
+    text-align: center;
+    font-family: 'Irish Grover', cursive;
+    background: url('assets/bg.png') no-repeat center center/cover;
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    flex: 1;
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+/* Heading */
+h1 {
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 2px 2px #ffb6c1;
+    margin-top: 10%;
+}
+
+.image-1, .image-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-1 {
+    width: 200px;
+}
+
+.image-2 {
+    width: 275px;
+}
+
+/* Button Styles */
+.button-container {
+    margin-bottom: 10%;
+    display: flex;
+    gap: 20px; /* Adds space between buttons */
+}
+
+.btn {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 30px;
+    font-family: 'Irish Grover', cursive;
+    box-shadow: 5px 5px 10px rgba(97, 97, 97, 0.1);
+    transition: 0.3s;
+    background-color: #FDDDFF;
+    color: #C95dA7;
+    border: 2px solid #C95dA7;
+    width: 120px;
+    position: static /* Ensures buttons start in the correct place */
+}
+
+.yes-btn {
+    position: absolute; /* Allows the button to be moved */
+    left: 50%;
+    transform: translateX(calc(-100% - 1rem)); /* Moves the button to the left */
+    z-index: 1; /* Ensures the button is above the background */
+}
+
+.no-btn {
+    position: absolute; /* Allows the button to be moved */
+    left: calc(50%+1rem); /* Moves the button to the right */
+    transition: all 0.5s ease; /* Adds a smooth transition */
+    z-index: 2; /* Ensures the button is above the background */
+}
+
+.btn:hover {
+    background-color: #fff6ff;
+    box-shadow: 5px 5px 10px rgba(97, 97, 97, 0.1);
+}
+
+
+
+.btn:hover {
+    background-color: #fff6ff;
+    box-shadow: 5px 5px 10px rgba(97, 97, 97, 0.1);
+}
